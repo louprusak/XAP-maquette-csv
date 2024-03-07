@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Données voiture</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="graph"style="height: 95vh;"></div>
+    <script>
+        function updateGraph() {
+            Plotly.d3.json('/update_graph', function (data) {
+                Plotly.react('graph', data.data, data.layout);
+            });
+        }
+
+        setInterval(updateGraph, 1000);
+    </script>
+</body>
+</html>
