@@ -36,6 +36,6 @@ for _ in range(num_rows):
 headers = ['time', 'rpm', 'water_temp', 'oil_temp', 'gear_volt']
 
 # Write data
-write_csv('data.csv', data, headers)
+write_csv('data/data.csv', data, headers)
 
 print("Generate success")

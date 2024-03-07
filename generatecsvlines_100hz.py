@@ -27,7 +27,7 @@ def write_csv(filename, data):
 headers = ['time', 'rpm', 'water_temp', 'oil_temp', 'gear_volt']
 
 # CSV file name
-filename = 'data_100hz.csv'
+filename = 'data/data_100hz.csv'
 
 # Write headers
 write_headers(filename, headers)

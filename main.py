@@ -78,7 +78,7 @@ def index():
 # Update page
 @app.route('/update_graph')
 def update_graph():
-    data = get_data_from_csv('data.csv')
+    data = get_data_from_csv('data/data.csv')
     graphJSON = generate_graph(data)
     return graphJSON
 
