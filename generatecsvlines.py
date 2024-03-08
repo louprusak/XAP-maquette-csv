@@ -45,6 +45,7 @@ while i < duration:
     data = generate_data_with_time(current_time)
     write_csv(filename, data)
     i += 1
+    print("Add data")
     time.sleep(1)
 
 print("Generate success")
